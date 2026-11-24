@@ -28,6 +28,9 @@ jobs:
             - name: Install dependencies
               run: uv sync --locked --all-groups
 
+            - name: Run pipeline example
+              run: uv run devops-automation
+
             - name: Run lint
               run: uv run ruff check .
 
