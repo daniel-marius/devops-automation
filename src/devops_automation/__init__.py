@@ -1,10 +1,8 @@
 from ipaddress import IPv4Address
 
-from devops_automation.classes.server import Server
 from devops_automation.classes.docker_manager import DockerManager
 from devops_automation.classes.pipeline import Pipeline
-
-from devops_automation.api.fast_api import app
+from devops_automation.classes.server import Server
 
 
 def main():
