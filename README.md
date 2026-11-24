@@ -27,12 +27,8 @@ Run the configured project command:
 uv run devops-automation
 ```
 
-The pipeline uses `INFO`-level logs. To display them in the terminal, configure
-logging for this run:
-
-```bash
-uv run python -c "import logging; logging.basicConfig(level=logging.INFO); from devops_automation import main; main()"
-```
+The entry point configures `INFO`-level logging, so the pipeline messages appear
+in the terminal.
 
 ## Run the API
 

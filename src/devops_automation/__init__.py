@@ -1,3 +1,4 @@
+import logging
 from ipaddress import IPv4Address
 
 from devops_automation.classes.docker_manager import DockerManager
@@ -6,6 +7,8 @@ from devops_automation.classes.server import Server
 
 
 def main():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
     server: Server = Server(
         name="web-server",
         ip=IPv4Address("192.168.1.10")
